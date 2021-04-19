@@ -1,7 +1,7 @@
 import React from 'react'
 import api from "../apiService";
 import { useEffect, useState } from 'react';
-import { Container, Card, Row, Col } from "react-bootstrap";
+import { Container, Card} from "react-bootstrap";
 import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
@@ -45,8 +45,8 @@ const Upcoming = () => {
         </Link>
         </div>
         <Slider {...settings}>
-        {movies.map((movie)=>{
-            return <React.Fragment>
+        {movies.map((movie,index)=>{
+            return <React.Fragment key={index}>
             <Link to={`/movies/${movie.id}`}>
             <Card className="bg-dark text-white overlay">
                 <Card.Img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} alt="Card image" />

@@ -15,6 +15,11 @@
     height: 35px;
     width: 35px;
     border-radius: 10px;
+    position: relative;
+  }
+  .slick-next::before {
+      content: '\f054';
+      position: absolute;
   }
   .slick-arrow:hover,
   .slick-arrow:active,
@@ -107,7 +112,8 @@
 
 /* Movieplayer --------------------> */
 .reactplayer{
-    background-color: grey;
+    background-color: rgb(0, 0, 0,);
 }
+
   
 /* Movieplayer --------------------> */

@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AlertMsg from "./components/AlertMsg";
 import HomePage from "./movies/Homepage"
-import MovieDetailPage from "./movies/MovieDetailPage"
 import SingleMoviePage from './movies/SingleMoviePage';
 import NavigationBar from './components/NavigationBar';
 import MovieFillterPage from './movies/MovieFillterPage';

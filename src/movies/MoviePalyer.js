@@ -13,7 +13,6 @@ const MoviePalyer = (props) => {
     const {id}=useParams();
     const [video, setVideo] = useState([]);
     const [detail, setDetail] = useState([]);
-    let genres = [];
     useEffect(()=>{
         const fetchData = async () => {
             try {
@@ -30,7 +29,7 @@ const MoviePalyer = (props) => {
         }
         fetchData()
     },[])
-    genres = detail.genres;
+    
 
 
     const youtubeUrl = `https://www.youtube.com/watch?v=${video.key}`;
@@ -40,6 +39,7 @@ const MoviePalyer = (props) => {
         {...props}
         size="lg"
         centered
+        style={{background: 'rgb(0, 0, 0, 0.5)'}}
       >
         <Modal.Header closeButton>
           <Modal.Title style={{ color: "white", fontWeight: "bolder" }}>

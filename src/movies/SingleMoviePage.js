@@ -21,19 +21,19 @@ const SingleMoviePage = () => {
     const [casts, setCasts] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
     const [similarMovie, setSimilarMovie] = useState([]);
-    let genres = [];
-    let genresList;
-    if (genres) {
-      genresList = genres.map((g, i) => {
-        return (
-          <li className="list-inline-item" key={i}>
-            <button type="button" className="btn btn-outline-info">
-              {g.name}
-            </button>
-          </li>
-        );
-      });
-    }
+    // let genres = [];
+    // let genresList;
+    // if (genres) {
+    //   genresList = genres.map((g, i) => {
+    //     return (
+    //       <li className="list-inline-item" key={i}>
+    //         <button type="button" className="btn btn-outline-info">
+    //           {g.name}
+    //         </button>
+    //       </li>
+    //     );
+    //   });
+    // }
     useEffect(()=>{
         const fetchData = async () => {
             try {
@@ -60,7 +60,7 @@ const SingleMoviePage = () => {
         fetchData()
     },[id])
     console.log( movies.genres);
-    genres = detail.genres;
+    
     return (
 
         <Container className="mt-5 pt-5 ">
@@ -107,7 +107,7 @@ const SingleMoviePage = () => {
       <Row>
         <Col className="col">
         <ul className="movie-details-genres">
-        {Array.isArray(movies.genres) && movies.genres.map(el => <li className="ml-2">{el.name}</li>)}
+        {Array.isArray(movies.genres) && movies.genres.map((el,index) => <li className="ml-2" key={index}>{el.name}</li>)}
         </ul>
         </Col>
       </Row>

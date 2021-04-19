@@ -23,15 +23,15 @@ const MovieDetailPage = () => {
    
     return (
         <Carousel fade>
-        {movies.map((movie)=>{
-            return <Carousel.Item interval={2500}>
+        {movies.map((movie,index)=>{
+            return <Carousel.Item interval={2500} key={index}>
             <img
               className="d-block w-100"
               src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
               alt="First slide"
             />
             <Carousel.Caption className="moviesdetail">
-              <h3>{movie.title}</h3>
+              <h2>{movie.title}</h2>
               <p>{movie.overview}</p>
             </Carousel.Caption>
           </Carousel.Item>
