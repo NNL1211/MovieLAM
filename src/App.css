@@ -1,0 +1,113 @@
+*{
+    background-color: #000;
+}
+
+/* NavbarCSS ------------------>*/
+
+.icon-nav{
+    background-color: #fff;
+}
+.nav-dark{
+    
+}
+/* .slick-arrow {
+    background-color:grey !important;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+  }
+  .slick-arrow:hover,
+  .slick-arrow:active,
+  .slick-arrow:focus {
+    background-color: red !important;
+  } */
+.title{
+    color: #fff;
+    font-size: 2.5rem;
+}
+/* NavbarCSS ------------------>*/
+
+
+/* MovieDetailPage -------------> */
+.moviesdetail{
+    opacity: 0.5;
+}
+.moviesdetail h3{
+    opacity: 1;
+} 
+
+/* MovieDetailPage -------------> */
+
+
+
+
+
+/* CardMovieCSS ------------------>*/
+.overlay{
+    text-align: center;
+    overflow: scroll;
+}
+.image__overlay{
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s;
+    font-family: "Playfair Display",serif;
+}
+.image__overlay:hover{
+    opacity: 0.75;
+    
+}
+.overlay:hover{
+    width: 105% !important;
+  
+   
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+/* CardMovieCSS ------------------>*/
+
+
+/* SinglepageMovieCSS ------------------>*/
+.singlepage{
+    color: #fff;
+}
+
+.movie-details-genres{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-details-genres li {
+    background-color: #326b87 !important;
+    padding: 5px 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+/* SinglepageMovieCSS ------------------>*/
+
+
+/* Movieplayer --------------------> */
+.reactplayer{
+    background-color: grey;
+}
+  
+/* Movieplayer --------------------> */
