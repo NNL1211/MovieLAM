@@ -48,6 +48,11 @@
 
 
 /* CardMovieCSS ------------------>*/
+.cardmovie:hover{
+    width: 102% !important;
+    transition: 500ms;
+}
+
 .overlay{
     text-align: center;
     overflow: scroll;
