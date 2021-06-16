@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 *{
     background-color: #000;
 }
@@ -48,15 +50,20 @@
 
 
 /* CardMovieCSS ------------------>*/
+/* .cardmovie{
+    transition: transform .5s;
+}
 .cardmovie:hover{
     width: 102% !important;
-    transition: 500ms;
-}
+    
+} */
 
 .overlay{
     text-align: center;
-    overflow: scroll;
+    /* overflow: scroll; */
+    transition:  transform .5s;
 }
+
 .image__overlay{
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -67,13 +74,15 @@
     justify-content: center;
     transition: opacity 0.25s;
     font-family: "Playfair Display",serif;
+    transition:  transform .5s;
 }
 .image__overlay:hover{
     opacity: 0.75;
     
 }
 .overlay:hover{
-    width: 105% !important;
+    transform: translateY(-10px);
+    /* width: 105% !important; */
   
    
 }

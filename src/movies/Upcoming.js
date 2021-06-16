@@ -51,7 +51,7 @@ const Upcoming = () => {
             <Card className="bg-dark text-white overlay">
                 <Card.Img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} alt="Card image" />
                 <Card.ImgOverlay className="image__overlay ">
-                <h3>{movie.title}</h3>
+                <h6>{movie.title}</h6>
                 <div><FontAwesomeIcon icon={faStar}/>{movie.vote_average}</div>
                 <div>Popularity: {movie.popularity}</div>
                 <div>Release Date: {movie.release_date}</div>

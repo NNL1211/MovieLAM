@@ -5,8 +5,8 @@ import TopRate from './TopRate';
 import MovieDetailPage from './MovieDetailPage';
 
 
+
 const Homepage = () => {
-   
     return (
         <div>
             <MovieDetailPage/>

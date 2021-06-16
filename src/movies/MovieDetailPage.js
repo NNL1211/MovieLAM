@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import api from "../apiService";
 
 
+
 const BACKEND_API = process.env.REACT_APP_BACKEND_API;
 const MovieDetailPage = () => {
     const [movies, setMovies] = useState([]);
